@@ -1,0 +1,111 @@
+.menu
+	max-width: 1200px
+	margin: 0 auto
+	display: flex
+	flex-direction: column
+	justify-content: center
+	margin-top: 20px
+
+.menu__banner
+	display: flex
+	justify-content: center
+	align-items: center
+
+.banner
+	max-width: 700px
+	height: auto
+
+.cont__top
+	max-width: 1200px
+	margin: 0 auto
+	display: flex
+	flex-direction: row
+	justify-content: center
+
+.menu h2
+	font-size: 30px
+	text-align: center
+	transition: .3s
+	margin-bottom: 5px
+
+.about__arrow, .rules__arrow
+	max-height: 180px
+
+.news--sm
+	// visibility: hidden
+
+	@media (max-width: 768px)
+		visibility: visible
+
+.news__arrow
+	max-height: 130px
+	margin-top: 50px
+
+.about, .news--sm, .rules
+	width: 150px
+	text-align: center
+
+.about:hover h2, .news--sm:hover h2, .rules:hover h2
+	font-size: 33px
+	margin-bottom: 2px
+
+.menu__big
+	max-width: 1200px
+	margin: 0 auto
+	display: flex
+	flex-direction: row
+
+.news--big, .winners--big
+	display: flex
+	align-items: center
+
+.news--big
+	flex-direction: row
+
+.winners--big
+	flex-direction: row-reverse
+
+.trumpet
+	max-width: 450px
+
+.news__arrow--big, .winners__arrow--big
+	max-width: 180px
+
+.news__arrow--big
+	margin-right: 15px
+
+.winners__arrow--big
+	margin-left: 15px
+
+.news__title--big
+	margin-right: 10px
+
+.winners__title--big
+	margin-left: 10px
+
+.news--big:hover .news__title--big
+	font-size: 33px
+	margin-right: 7px
+
+.winners--big:hover .winners__title--big
+	font-size: 33px
+	margin-left: 7px
+
+.cont__bottom
+	@extend .cont__top
+
+.gallery, .winners--sm, .contact
+	display: flex
+	flex-direction: column-reverse
+	width: 150px
+
+.gallery__arrow, .winners__arrow, .contact__arrow
+	max-height: 180px
+
+.gallery__title, .winners__title--sm, .contact__title
+	margin-top: 5px
+
+.gallery:hover h2, .winners--sm:hover h2, .contact:hover h2
+	font-size: 33px
+	margin-top: 2px
+	

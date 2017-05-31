@@ -6,6 +6,9 @@
 	justify-content: center
 	margin-top: 20px
 
+	@media (max-width: 768px)
+		width: 100vw
+
 .menu__banner
 	display: flex
 	justify-content: center
@@ -15,6 +18,9 @@
 	max-width: 700px
 	height: auto
 
+	@media (max-width: 768px)
+		width: 100%
+
 .cont__top
 	max-width: 1200px
 	margin: 0 auto
@@ -22,32 +28,59 @@
 	flex-direction: row
 	justify-content: center
 
+	@media (max-width: 600px)
+		width: 100vw
+
 .menu h2
 	font-size: 30px
 	text-align: center
 	transition: .3s
 	margin-bottom: 5px
 
+	@media (max-width: 450px)
+		font-size: 20px
+
 .about__arrow, .rules__arrow
 	max-height: 180px
 
-.news--sm
-	// visibility: hidden
-
 	@media (max-width: 768px)
+		max-height: 150px
+
+	@media (max-width: 450px)
+		max-height: 120px
+
+.news--sm, .winners--sm
+	visibility: hidden
+
+	@media (max-width: 1200px)
 		visibility: visible
 
 .news__arrow
 	max-height: 130px
 	margin-top: 50px
 
+	@media (max-width: 768px)
+		max-height: 110px
+		margin-top: 40px
+
+	@media (max-width: 450px)
+		max-height: 100px
+		margin-top: 30px
+
 .about, .news--sm, .rules
 	width: 150px
 	text-align: center
 
+	@media (max-width: 600px)
+		width: 33%
+
 .about:hover h2, .news--sm:hover h2, .rules:hover h2
 	font-size: 33px
 	margin-bottom: 2px
+
+	@media (max-width: 450px)
+		font-size: 22px
+		margin-bottom: 3px
 
 .menu__big
 	max-width: 1200px
@@ -55,9 +88,15 @@
 	display: flex
 	flex-direction: row
 
+	@media (max-width: 768px)
+		width: 100vw
+
 .news--big, .winners--big
 	display: flex
 	align-items: center
+
+	@media (max-width: 1200px)
+		display: none
 
 .news--big
 	flex-direction: row
@@ -65,8 +104,20 @@
 .winners--big
 	flex-direction: row-reverse
 
+.menu__trumpet
+
+	@media (max-width: 768px)
+		width: 100vw
+		display: flex
+		justify-content: center
+		align-items: center
+
 .trumpet
 	max-width: 450px
+	height: auto
+
+	@media (max-width: 768px)
+		width: 90vw
 
 .news__arrow--big, .winners__arrow--big
 	max-width: 180px
@@ -93,14 +144,24 @@
 
 .cont__bottom
 	@extend .cont__top
+	justify-content: space-around
 
 .gallery, .winners--sm, .contact
 	display: flex
 	flex-direction: column-reverse
 	width: 150px
 
+	@media (max-width: 600px)
+		width: 20%
+
 .gallery__arrow, .winners__arrow, .contact__arrow
 	max-height: 180px
+
+	@media (max-width: 768px)
+		max-height: 150px
+
+	@media (max-width: 450px)
+		max-height: 120px
 
 .gallery__title, .winners__title--sm, .contact__title
 	margin-top: 5px
@@ -108,4 +169,8 @@
 .gallery:hover h2, .winners--sm:hover h2, .contact:hover h2
 	font-size: 33px
 	margin-top: 2px
+
+	@media (max-width: 450px)
+		font-size: 22px
+		margin-top: 3px
 	
